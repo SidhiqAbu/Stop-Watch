@@ -2,4 +2,4 @@
 Creation of Stop Watch using html css and Js
 html and css and Js is used to built Stop Watch.
 
-test link 
+ quick test link https://sidhiqabu.github.io/Stop-Watch/
