@@ -1,0 +1,97 @@
+
+
+  /*  Creation of variables in css to changing the structure color of Stop watch...........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+:root{
+
+    --hue:200;
+    --saturation:30%;
+
+    --foreground-color:hsl(var(--hue),var(--saturation),70%);
+    --background-color:hsl(var(--hue),var(--saturation),80%);
+    --counter-color:hsl(var(--hue),var(--saturation),90%);
+    --btn-color:hsl(var(--hue),var(--saturation),30%);
+}
+
+/* Body of given html file..,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,. */
+body{
+    margin: 0;
+    padding: 0;
+    background-color:var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  It defines the stop watch outer div container............,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
+.outerBox{
+    width: 50%;
+    margin-top: 10%;
+    height: 50vh;
+    border-radius: 3%;
+    background-color: var(--foreground-color);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px  5px var(--btn-color);
+}
+
+/* It showing the font-size and color of counter......,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,. */
+
+.counter{
+    font-size: xxx-large;
+    color: var(--counter-color);
+    padding: 20px;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px var(--btn-color);
+}
+
+
+/*   It explains the container Box which storing start, stop,resum buttons...........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.. */
+
+.btn-container{
+        
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+}
+
+ /* It defines the buttons properties...........................,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.  */
+
+button{  
+    font-size: x-large;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow:0px 0px 20px var(--counter-color);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color:var(--background-color);
+    border-radius: 10px;  
+    padding: 7px;
+    color: var(--btn-color);
+    box-shadow: 0px 0px 4px var(--btn-color);
+}
+
+
+/*  media  is used to increasing of screen size in small screen size devices..........,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,..... */
+
+@media only screen 
+and (max-width : 600px) {
+  .outerBox{
+    width: 90%;
+  }
+}
+
+@media screen and (min-height : 1100px) {
+    .outerBox{
+        height: 40vh;
+    }
+}
